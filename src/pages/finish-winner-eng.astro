@@ -7,8 +7,8 @@ import Winners from '@components/sections/Winners.astro';
 
 const prizes = [
     {
-        title: 'The ultimate gaming rig',
-        count: '1 шт.',
+        title: 'God-tier PC',
+        count: '1 pcs.',
         image: 'pc',
         avatar: '01',
         user: 'Lootkiller',
@@ -18,77 +18,63 @@ const prizes = [
     },
     {
         title: 'Playstation 5 Pro',
-        count: '3 шт.',
+        count: '3 pcs.',
         image: 'playstation',
         avatar: '02',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
     },
     {
-        title: 'Xbox Series X',
-        count: '3 шт.',
-        image: 'xbox',
+        title: 'LG 27GX790A-B display',
+        count: '3 pcs.',
+        image: 'lg',
         avatar: '03',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
     },
     {
         title: 'iPhone 17 Pro Max',
-        count: '3 шт.',
+        count: '5 pcs.',
         image: 'iphone',
         avatar: '',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
+        winners: ['Architekto_bz','trallalelo','shaska-pulemet','shaska-pulemet','annapipka'],
     },
     {
-        title: 'Nintendo Switch&nbsp;2',
-        count: '3 шт.',
-        image: 'nintendo',
+        title: 'OnePlus 15',
+        count: '5 pcs.',
+        image: 'oneplus',
         avatar: '',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
+        winners: ['Architekto_bz','trallalelo','shaska-pulemet','shaska-pulemet','annapipka'],
     },
     {
         title: 'Steam Deck OLED',
-        count: '3 шт.',
+        count: '10 pcs.',
         image: 'steam',
         avatar: '04',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
+        winners: ['Architekto_bz','trallalelo','shaska-pulemet','shaska-pulemet','annapipka','shaska-pulemet','annapipka','shaska-pulemet','annapipka','shaska-pulemet'],
     },
     {
-        title: 'Tablet Red Magic Gaming Pad&nbsp;3',
-        count: '3 шт.',
-        image: 'redmagic',
+        title: 'Branded FunPay glass',
+        count: '50 pcs.',
+        image: 'cup',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
     },
     {
-        title: 'Headphones Audeze Maxwell',
-        count: '5 шт.',
-        image: 'audeze',
+        title: 'Branded FunPay hoodie',
+        count: '50 pcs.',
+        image: 'hoodie',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
     },
     {
-        title: 'Headphones Moondrop Blessing 3',
-        count: '5 шт.',
-        image: 'moondrop',
-        avatar: '05',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
-    },
-    {
-        title: 'Razer Viper V3&nbsp;Pro',
-        count: '10 шт.',
-        image: 'razer',
-        avatar: '06',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
-    },
-    {
-        title: '10k RUB',
-        count: '50 шт.',
+        title: 'Games worth 10&nbsp;000&nbsp;RUB',
+        count: '50 pcs.',
         image: 'games10',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
     },
     {
-        title: '5k RUB',
-        count: '100 шт.',
+        title: 'Games worth 5&nbsp;000&nbsp;RUB',
+        count: '100 pcs.',
         image: 'games5',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
@@ -147,12 +133,12 @@ const myTickets = [
 ]
 
 ---
-<Layout title="Loottery">
+<Layout title="Lootery">
 
     <FinishPromo
         noteText="Thanks for playing!"
-        title="The Loottery is over"
-        titleWinner="The Loottery is over"
+        title="<span class='u-text-accent'>Loot</span>ery is over"
+        titleWinner="<span class='u-text-accent'>Loot</span>ery is over"
         text="Watch the draw replay on Twitch"
         buttonText="Watch results on Twitch"
         isWinner={true}

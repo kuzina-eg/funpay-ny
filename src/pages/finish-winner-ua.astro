@@ -7,7 +7,7 @@ import Winners from '@components/sections/Winners.astro';
 
 const prizes = [
     {
-        title: 'Цар-пекарня',
+        title: 'Царь-пекарня',
         count: '1 шт.',
         image: 'pc',
         avatar: '01',
@@ -24,70 +24,56 @@ const prizes = [
         winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
     },
     {
-        title: 'Xbox Series X',
+        title: 'Монітор LG 27GK790A-B',
         count: '3 шт.',
-        image: 'xbox',
+        image: 'lg',
         avatar: '03',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
     },
     {
         title: 'iPhone 17 Pro Max',
-        count: '3 шт.',
+        count: '5 шт.',
         image: 'iphone',
         avatar: '',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
+        winners: ['Architekto_bz','trallalelo','shaska-pulemet','shaska-pulemet','annapipka'],
     },
     {
-        title: 'Nintendo Switch&nbsp;2',
-        count: '3 шт.',
-        image: 'nintendo',
+        title: 'OnePlus 15',
+        count: '5 шт.',
+        image: 'oneplus',
         avatar: '',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
+        winners: ['Architekto_bz','trallalelo','shaska-pulemet','shaska-pulemet','annapipka'],
     },
     {
         title: 'Steam Deck OLED',
-        count: '3 шт.',
+        count: '10 шт.',
         image: 'steam',
         avatar: '04',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
+        winners: ['Architekto_bz','trallalelo','shaska-pulemet','shaska-pulemet','annapipka','shaska-pulemet','annapipka','shaska-pulemet','annapipka','shaska-pulemet'],
     },
     {
-        title: 'Планшет Red Magic Gaming Pad&nbsp;3',
-        count: '3 шт.',
-        image: 'redmagic',
+        title: 'Фірмовий стакан FunPay',
+        count: '50 шт.',
+        image: 'cup',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet'],
     },
     {
-        title: 'Навушники Audeze Maxwell',
-        count: '5 шт.',
-        image: 'audeze',
+        title: 'Фірмова толстовка FunPay',
+        count: '50 шт.',
+        image: 'hoodie',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
     },
     {
-        title: 'Навушники Moondrop Blessing&nbsp;3',
-        count: '5 шт.',
-        image: 'moondrop',
-        avatar: '05',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
-    },
-    {
-        title: 'Razer Viper V3&nbsp;Pro',
-        count: '10 шт.',
-        image: 'razer',
-        avatar: '06',
-        winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
-    },
-    {
-        title: 'Ігри на сумму до 100 євро',
+        title: 'Ігри на&nbsp;суму до&nbsp;100&nbsp;євро',
         count: '50 шт.',
         image: 'games10',
         avatar: '',
         winners: ['Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball','Architekto_bz','trallalelo','shaska-pulemet','annapipka','rock&ball'],
     },
     {
-        title: 'Ігри на сумму до 50 євро',
+        title: 'Ігри на&nbsp;суму до&nbsp;50&nbsp;євро',
         count: '100 шт.',
         image: 'games5',
         avatar: '',
@@ -150,16 +136,16 @@ const myTickets = [
 <Layout title="Лутерея">
 
     <FinishPromo
-        noteText="Дякуємо за участь!"
-        title="“Лутерею” завершено"
-        titleWinner="“Лутерею” завершено"
-        text="Підсумки розіграшу ми підбили на стрімі"
-        buttonText="Дивитися підсумки на Twitch"
+        noteText="Дякую за участь!"
+        title="<span class='u-text-accent'>Лут</span>ерею завершено"
+        titleWinner="<span class='u-text-accent'>Лут</span>ерею завершено"
+        text="Підсумки розіграшу ми&nbsp;підбили на&nbsp;стрімі"
+        buttonText="Подивитися підсумки на&nbsp;Twitch"
         isWinner={true}
-        boxTitle="На жаль, цього разу без призів"
+        boxTitle="На жаль,<br> цього разу без призів"
         boxTitleWinner="Вітаємо! Ви виграли:<br> Nintendo Switch 2"
-        boxText="Наступного разу вам обов&rsquo;язково пощастить! Не&nbsp;втрачайте надію і&nbsp;слідкуйте за&nbsp;анонсами"
-        boxTextWinner="Ого, оце так удача! Ми&nbsp;зв&rsquo;яжемося з&nbsp;вами в&nbsp;особистих повідомленнях на&nbsp;FunPay, щоб обговорити доставку призу. Хай вам щастить і&nbsp;надалі."
+        boxText="Наступного разу вам обов&rsquo;язково пощастить! Не&nbsp;втрачайте надії, слідкуйте за&nbsp;анонсами"
+        boxTextWinner="Воу! Оце так удача! Ми&nbsp;зв&rsquo;яжемося з&nbsp;вами в&nbsp;особистих повідомленнях на&nbsp;FunPay, щоб обговорити доставку призу. Нехай щастить і&nbsp;надалі"
         myTicketsBoxTitle1="Виграв квиток:"
     ></FinishPromo>
 

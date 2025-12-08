@@ -43,7 +43,7 @@ const {
     <h2 class="lootery-my-tickets__title lootery-section__title" set:html={title}></h2>
     <div class="lootery-my-tickets__descr">
         <Fragment set:html={myTicketsText1}></Fragment>
-        <strong set:html={myTicketsText2}></strong>,
+        <strong set:html={myTicketsText2}></strong>
         <Fragment set:html={myTicketsText3}></Fragment>
         <span class="ticket-text">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,15 +56,12 @@ const {
 
     <div class="lootery-my-tickets__box">
         <div class="lootery-my-tickets__box-photo">
-            <Picture
-                class="lootery-my-tickets__box-image"
-                name="ornament"
-                directory="img/lootery/tickets/"
-                type="png"
-                imageWidth="830"
-                imageHeight="377"
-                sourceMobile='<source type="image/webp" srcset="img/lootery/tickets/ornament-mobile@2x.webp 2x" media="(max-width: 480px)">'
-            ></Picture>
+            <picture>
+                <source type="image/webp" srcset="img/lootery-ny/tickets/ornament-sm@1x.webp 1x, img/lootery-ny/tickets/ornament-sm@2x.webp 2x" media="(max-width: 576px)">
+                <source type="image/webp" srcset="img/lootery-ny/tickets/ornament-md@1x.webp 1x, img/lootery-ny/tickets/ornament-md@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/lootery-ny/tickets/ornament@1x.webp 1x, img/lootery-ny/tickets/ornament@2x.webp 2x">
+                <img class="lootery-my-tickets__box-image" src="img/lootery-ny/tickets/ornament@1x.png" srcset="img/lootery-ny/tickets/ornament@2x.png 2x" alt="" width="867" height="378" loading="lazy">
+            </picture>
         </div>
         <div class="lootery-my-tickets__box-title">
             <Fragment set:html={myTicketsBoxTitle1}></Fragment>
@@ -87,7 +84,7 @@ const {
                 <Picture
                     class="lootery-modal-my-tickets__image"
                     name="my"
-                    directory="img/lootery/tickets/"
+                    directory="img/lootery-ny/tickets/"
                     type="png"
                     imageWidth="436"
                     imageHeight="182"

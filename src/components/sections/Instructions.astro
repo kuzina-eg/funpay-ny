@@ -28,7 +28,7 @@ const {
                     <div class="item-instruction__num">{item.num}</div>
                     <div class="item-instruction__descr" set:html={item.text}></div>
                     <div class="item-instruction__footer">
-                        <Button type="link" href="#" style="light">{item.buttonText}</Button>
+                        <Button type="link" href="#" style="light" set:html={item.buttonText}></Button>
                     </div>
             </div>
         ))}

@@ -21,7 +21,7 @@ const {
 
     ---
 <div class="prizes lootery-section">
-    {items.map((item) => (
+    {items.map((item, index) => (
         <div class="item-prize">
             <div class="item-prize__detail">
                 <div class="item-prize__title"><a href=`#${item.image}` class="item-prize__link" data-fancybox="prizes" set:html={item.title}></a></div>
@@ -31,7 +31,7 @@ const {
                 <Picture
                     class="item-prize__image"
                     name={item.image}
-                    directory="img/lootery/prizes/"
+                    directory="img/lootery-ny/prizes/"
                     type="png"
                     imageWidth="500"
                     imageHeight="400"
@@ -52,7 +52,7 @@ const {
                 <Picture
                     class="lootery-modal__image"
                     name={item.image}
-                    directory="img/lootery/prizes/"
+                    directory="img/lootery-ny/prizes/"
                     type="png"
                     imageWidth="500"
                     imageHeight="400"
@@ -64,7 +64,7 @@ const {
             <div class="lootery-modal__note" set:html={item.note}></div>
             <div class="lootery-modal__action">
                 <div class="lootery-modal__action-logo">
-                    <img src="img/lootery/logo.png" width="100" height="39" alt="">
+                    <img src="img/lootery-ny/logo.png" width="100" height="39" alt="">
                 </div>
                 <div class="lootery-modal__action-text" set:html={modalText}></div>
             </div>
