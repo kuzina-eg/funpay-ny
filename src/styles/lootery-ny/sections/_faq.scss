@@ -8,7 +8,7 @@
     &__title {
         margin-bottom: 30px;
 
-        @include media-min(mob-md) {
+        @include media-min(mob) {
             margin-bottom: 2.5rem;
         }
     }

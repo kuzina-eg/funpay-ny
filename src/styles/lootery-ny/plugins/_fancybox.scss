@@ -140,9 +140,11 @@
         margin-bottom: 5px;
         font-size: 20px;
         color: $color-black;
+        line-height: 1.2;
 
         @include media-min(mob-md) {
-            font-size: 24px;
+            margin-bottom: 0;
+            font-size: 25px;
         }
 
         @include media-min(mob) {
@@ -151,40 +153,49 @@
     }
 
     &__param {
+        min-height: 1.6em;
         font-size: 12px;
         line-height: 1.6;
         color: $color-black;
+
+        @include media-min(mob-md) {
+            //font-size: 15px;
+        }
     }
 
     &__descr {
-        margin-top: 2px;
-        font-size: 14px;
-        line-height: 1.6;
+        margin-top: 5px;
+        min-height: calc(4 * 1.2em);
+        font-size: 12px;
+        line-height: 1.2;
         color: $color-grey;
 
         @include media-min(mob-md) {
-            margin-left: 10%;
-            margin-right: 10%;
-            font-size: 16px;
+            margin-left: 8%;
+            margin-right: 8%;
+            margin-top: 3px;
+            font-size: 15px;
         }
     }
 
     &__note {
         margin-top: 6px;
+        min-height: calc(1.4 * 2em);
         font-size: 11px;
         line-height: 1.4;
         color: $color-grey-light;
 
         @include media-min(mob-md) {
             max-width: 320px;
+            margin-top: 11px;
             margin-left: auto;
             margin-right: auto;
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
     &__action {
-        margin-top: 6px;
+        margin-top: 9px;
         background: linear-gradient(270deg, #EACEFF 0%, #B4F1FF 100%);
         border-radius: 16px;
         min-height: 70px;
@@ -222,6 +233,7 @@
         @include media-min(mob-md) {
             gap: 28px;
             grid-template-columns: 90px 258px;
+            margin-top: 11px;
 
             &-text {
                 font-size: 14px;

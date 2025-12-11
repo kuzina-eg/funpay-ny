@@ -1,7 +1,7 @@
 @use "@styles/lootery-ny/mixins" as *;
 
 .item-prize {
-    padding: 15px;
+    padding: 15px 15px 10px;
     border-radius: 12px;
     background-color: rgba($color-white-rgb,.5);
     position: relative;
@@ -39,8 +39,13 @@
     }
 
     &__detail {
+        height: 47px;
         //position: relative;
         //z-index: 10;
+
+        @include media-min(mob-md) {
+            height: 50px;
+        }
 
         @include media-min(tab) {
             margin-bottom: auto;
@@ -100,7 +105,7 @@
         align-items: center;
         position: relative;
         z-index: 10;
-        margin-top: .625rem;
+        margin-top: 5px;
         height: 15px;
         padding: 0 8px;
         background-color: $color-white;
@@ -113,6 +118,7 @@
 
         @include media-min(mob-md) {
             height: 20px;
+            margin-top: 10px;
             font-size: 12px;
         }
 
@@ -135,6 +141,8 @@
 
         @include media-min(mob-md) {
             padding-top: 7px;
+            width: 105%;
+            margin-right: -30px;
             top: 0;
         }
 
@@ -142,6 +150,7 @@
             //width: 110%;
             width: 100%;
             margin-top: -20%;
+            margin-right: -15px;
         }
     }
 
@@ -260,7 +269,7 @@
 
             .item-prize {
                 &__title {
-                    font-size: 20px;
+                    font-size: 17px;
                 }
 
                 &__photo {
@@ -275,7 +284,7 @@
                     transform: translate(-50%, -50%);
                     width: auto;
                     max-width: none;
-                    height: 116%;
+                    height: 115%;
                     //min-height: 175px;
                 }
             }
@@ -285,7 +294,7 @@
         &:nth-child(6) {
             .item-prize {
                 &__image {
-                    transform: translate(-60%, -50%);
+                    transform: translate(-60%, -45%);
                 }
             }
         }
@@ -295,7 +304,7 @@
             .item-prize {
                 &__photo {
                     width: 115%;
-                    margin-top: -30%;
+                    margin-top: -16%;
                     transform: translate(20%, 0);
                 }
             }
@@ -323,6 +332,47 @@
                     margin-left: -10%;
                     margin-right: -10%;
                     top: 10px;
+                }
+            }
+        }
+
+
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10) {
+            .item-prize {
+                &__title {
+                    font-size: 14px;
+                }
+
+                &__detail {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    @include media-min(pc) {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            .item-prize {
+                &__title {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10) {
+            .item-prize {
+                &__title {
+                    font-size: 16px;
                 }
             }
         }

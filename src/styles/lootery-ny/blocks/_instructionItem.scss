@@ -8,8 +8,8 @@
     mask-size: 100% 100%;
     position: relative;
     display: grid;
-    gap: $space;
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
+    gap: $space 10vw;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 2.2fr);
     grid-template-areas:
         "title text"
         "num text"
@@ -17,8 +17,8 @@
     grid-template-rows: auto 1fr;
 
     @include media-min(mob-md) {
-        padding: 30px 20px 34px 30px;
-        gap: 46px;
+        padding: 30px 30px 34px 20px;
+        gap: 46px 70px;
         grid-template-columns: minmax(0, 1fr) minmax(0, 2.8fr);
         grid-template-areas:
             "title text"
@@ -27,7 +27,7 @@
     }
 
     @include media-min(mob) {
-        padding: 40px 70px 40px 40px;
+        padding: 35px 31px 40px 31px;
         gap: 38px 70px;
         grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
         mask-image: url("data:image/svg+xml,%3Csvg width='745' height='246' viewBox='0 0 745 246' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M733 0C739.627 0 745 5.37258 745 12V234C745 240.627 739.627 246 733 246H252C245.373 246 240.126 239.635 234.844 235.633C232.664 233.98 229.947 233 227 233C224.053 233 221.336 233.98 219.156 235.633C213.874 239.635 208.627 246 202 246H12C5.37258 246 0 240.627 0 234V12C1.73955e-06 5.37258 5.37258 0 12 0H202C208.627 0 213.874 6.36452 219.156 10.3674C221.336 12.0197 224.053 13 227 13C229.947 13 232.664 12.0197 234.844 10.3674C240.126 6.36452 245.373 0 252 0H733Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -49,39 +49,43 @@
             left: 28.2374%;
         }
 
-        @include media-min(mob-md) {
+        @include media-min(tab) {
             left: 30.47%;
         }
     }
 
     &__title {
         grid-area: title;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         line-height: 1.1;
 
         @include media-min(mob-md) {
-            font-size: 20px;
+            font-size: 15px;
         }
 
         @include media-min(mob) {
-            font-size: 28px;
+            font-size: 22px;
         }
     }
 
     &__descr {
         grid-area: text;
         //max-width: 173px;
-        font-size: 12px;
+        margin-right: 10%;
+        font-size: 11px;
+        line-height: 1.3;
         color: $color-grey;
 
         @include media-min(mob-md) {
-            font-size: 14px;
-            max-width: none;
+            font-size: 13px;
+            //max-width: none;
         }
 
         @include media-min(mob) {
-            font-size: 16px;
+            margin-right: 2%;
+            font-size: 17px;
+            line-height: 1.25;
         }
     }
 
@@ -95,12 +99,16 @@
         height: 3.125rem;
         border-radius: 3.125rem;
         background-color: rgba($color-accent-rgb, .15);
-        font-size: $text-size-xl;
+        font-size: 16px;
         color: $color-accent;
         font-weight: 700;
 
         @include media-min(mob-md) {
             margin-top: auto;
+        }
+
+        @include media-min(mob) {
+            font-size: 20px;
         }
     }
 
