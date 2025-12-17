@@ -154,12 +154,30 @@
 
     &__param {
         min-height: 1.6em;
+        margin-top: 2px;
+        margin-bottom: 5px;
         font-size: 12px;
         line-height: 1.6;
         color: $color-black;
 
         @include media-min(mob-md) {
+            margin-top: 6px;
+            margin-bottom: 18px;
             //font-size: 15px;
+        }
+    }
+
+    &__count {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
+        text-align: center;
+        color: $color-grey;
+
+        @include media-min(mob-md) {
+            margin-bottom: 19px;
+            font-size: 20px;
         }
     }
 

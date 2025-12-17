@@ -59,7 +59,11 @@ const {
                 ></Picture>
             </div>
             <h3 class="lootery-modal__title" set:html={item.title}></h3>
-            <div class="lootery-modal__param" set:html={item.param}></div>
+            { item.param ?
+                <div class="lootery-modal__param" set:html={item.param}></div>
+                :
+                <div class="lootery-modal__count" set:html={item.count}></div>
+            }
             <div class="lootery-modal__descr" set:html={item.text}></div>
             <div class="lootery-modal__note" set:html={item.note}></div>
             <div class="lootery-modal__action">
